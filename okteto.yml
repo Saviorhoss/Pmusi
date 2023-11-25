@@ -1,3 +1,7 @@
-build:
-  docker:
-    worker: Dockerfile
+version: "3"
+services:
+  vidmergebot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    
